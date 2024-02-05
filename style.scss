@@ -1,0 +1,18 @@
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+}
+
+@import 'config';
+@import 'login';
+@import 'signup';
+@import 'nav';
+@import 'dashboard';
+@import 'checkup';
+@import 'faqs';
+body {
+  overflow:auto;
+}

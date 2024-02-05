@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/final_icon.png" type="image/gif" sizes="60x60">
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li id="active"><a href="./dashboard.html">HOME</a></li>
+      <li><a href="./checkup.html">CHECKUP</a></li>
+      <li><a href="./faqs.html">FAQS</a></li>
+      <li id="logoutNav"><a href="./login.html">LOGOUT <i class="fas fa-sign-out-alt"></i></a></li>
+    </ul>
+    <!--responsive nav-->
+    <button id="hamburger" onclick="responsiveMenu()"><i class="fas fa-bars"></i></button>
+    <ul id="responsiveMenu">
+      <a href="./dashboard.html"><li id="active">HOME</li></a>
+      <a href="./checkup.html"><li>CHECKUP</li></a>
+      <a href="./faqs.html"><li>FAQS</li></a>
+      <a href="./login.html"><li>LOGOUT</li></a>
+    </ul>
+  </nav>
+  <div id="faqcontainer">
+    <h1>FAQS</h1>
+    <p class="question">How do we go about using this platform?</p>
+    <p class="answer">Easy! First you must undergo the checkup process after which a meeting will be with a doctor. The link to this meeting will be visible 5 minutes prior to the consultation time.</p>
+    <p class="question">What do I do if I need one-on-one consultation with a doctor?</p>
+    <p class="answer">CovidIkshana does not provide a way to help with one-on-one consultation.</p>
+    <p class="question">What do I do if I feel my symptoms are out of control.</p>
+    <p class="answer">Go through the checkup process if you can and doctors are on standby to assist you every hour. If the case is severe doctors may advise you to go for consultation on an individual level.</p>
+    <p class="question">How often do I need to checkup?</p>
+    <p class="answer">You can checkup as many times as you want but a checkup every 24 hours is mandatory.</p>
+    <p class="question">What do I do if I don't have specific results in the checkup</p>
+    <p class="answer">You are required to fill all the details except CRP and HRCT but we encourage you to fill these details as and when you are instructed to get these tests done.</p>
+    <p class="question">How long is the waiting time?</p>
+    <p class="answer">The waiting time for a consultation will be maximum 30 minutes. Meetings are scheduled every 30 minutes.</p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
