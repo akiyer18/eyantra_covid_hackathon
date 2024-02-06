@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/final_icon.png" type="image/gif" sizes="60x60">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li id="active"><a href="./dashboard.html">HOME</a></li>
+      <li><a href="./checkup.html">CHECKUP</a></li>
+      <li><a href="./faqs.html">FAQS</a></li>
+      <li id="logoutNav"><a href="./login.html">LOGOUT <i class="fas fa-sign-out-alt"></i></a></li>
+    </ul>
+    <!--responsive nav-->
+  <button id="hamburger" onclick="responsiveMenu()"><i class="fas fa-bars"></i></button>
+  <ul id="responsiveMenu">
+    <a href="./dashboard.html"><li id="active">HOME</li></a>
+    <a href="./checkup.html"><li>CHECKUP</li></a>
+    <a href="./faqs.html"><li>FAQS</li></a>
+    <a href="./login.html"><li>LOGOUT</li></a>
+  </ul>
+  </nav>
+  <div id ="backgroundCheckup"></div>
+  <div id="checkupPageMain">
+    <div id="checkupContainer">
+
+      <h1>Checkup <i class="fas fa-hand-holding-medical"></i></h1>
+      <form action="">
+        <div id="leftRightCheckup">
+          <div id="leftCheckup">
+            <label for="q0">Number of days since first symptom:</label><br>
+            <input id="q0" name="q0" type="number" min="0" max="15" required><br>
+            <label for="q1">Number of days of fever:</label><br>
+            <input id="q1" name="q1" type="number" min="0" max="15" required><br>
+            <label for="q2">Respiratory rate:</label><br>
+            <input id="q2" name="q2" type="number" min="3" max="50" required><br>
+            <label for="q3">SpO2:</label><br>
+            <input id="q3" name="q3" type="number" min="0" max="100" required><br>
+            <label for="q4">CRP(optional):</label><br>
+            <input id="q4" name="q4" type="number" min="0" max="1000"><br>
+            <label for="q5">HRCT score(optional):</label><br>
+            <input id="q5" name="q5" type="number" min="0" max="25"><br>
+          </div>
+          <div id="rightCheckup">
+            <label>Do you have any comorbidities?<br>
+              <input type="radio" id="yesComo" name="Como" value="yes" class="rightAlignItem">
+              <label for="yesComo">Yes</label><br>
+              <input type="radio" id="noComo" name="Como" value="no" class="rightAlignItem">
+              <label for="noComo">No</label><br>
+            </label><br>
+            <label id="symptomsTab">Symptoms(select all that apply)<br>
+              <input type="checkbox" id="symptom1" name="symptom1" class="rightAlignItem">
+              <label for="sumptom1">Dry cough</label><br>
+              <input type="checkbox" id="symptom2" name="symptom2" class="rightAlignItem">
+              <label for="symptom2">Cold</label><br>
+              <input type="checkbox" id="symptom3" name="symptom3" class="rightAlignItem">
+              <label for="sumptom3">Headache</label><br>
+              <input type="checkbox" id="symptom4" name="symptom4" class="rightAlignItem">
+              <label for="symptom4">Body Ache</label><br>
+              <input type="checkbox" id="symptom5" name="symptom5" class="rightAlignItem">
+              <label for="symptom5">Shortness of Breath</label><br>
+              <input type="checkbox" id="symptom6" name="symptom6" class="rightAlignItem">
+              <label for="symptom6">Weakness</label><br>
+              <input type="checkbox" id="symptom7" name="symptom7" class="rightAlignItem">
+              <label for="symptom7">Loss of taste and smell</label><br>
+            </label>
+          </div>
+        </div>
+        <input type="submit" id="submitCheckup" value="SUBMIT">
+      </form>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

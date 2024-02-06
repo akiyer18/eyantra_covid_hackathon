@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CovidIkshana</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/final_icon.png" type="image/gif" sizes="60x60">
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li id="active"><a href="./dashboard.html">HOME</a></li>
+      <li><a href="./checkup.html">CHECKUP</a></li>
+      <li><a href="./faqs.html">FAQS</a></li>
+      <li id="logoutNav"><a href="./login.html">LOGOUT <i class="fas fa-sign-out-alt"></i></a></li>
+    </ul>
+    <!--responsive nav-->
+    <button id="hamburger" onclick="responsiveMenu()"><i class="fas fa-bars"></i></button>
+    <ul id="responsiveMenu">
+      <a href="./dashboard.html">
+        <li id="active">HOME</li>
+      </a>
+      <a href="./checkup.html">
+        <li>CHECKUP</li>
+      </a>
+      <a href="./faqs.html">
+        <li>FAQS</li>
+      </a>
+      <a href="./login.html">
+        <li>LOGOUT</li>
+      </a>
+    </ul>
+  </nav>
+  <div id="instructions">
+    <h4>Instruction to be followed:</h4><br>
+    <ol>
+      <li><b>Step 1:</b> Go to checkup and fill the form.</li>
+      <li><b>Step 2:</b> Once the details are filled and accepted, the consultation link will be activated for the next
+        consultation.</li>
+      <li><b>Step 3:</b> Join and wait for the meeting to start.</li>
+    </ol>
+  </div>
+  <div id="mainContainerDashboard">
+    <section id="checkupTabDashboard">
+      <h2>CHECKUP</h2>
+      <a id="checkupButtonDashboard" href="./checkup.html"><i class="fas fa-check"></i></a>
+    </section>
+    <section id="consultationTabDashboard">
+      <h2>CONSULTATION</h2>
+      <a id="consulatationDashboardLink" href="https://us05web.zoom.us/j/85936919025?pwd=MEVweGptUUJITUk4dHpTRkVGa1hJdz09">Join</a>
+    </section>
+    <section id="FAQTabDashboard">
+      <h2>FAQS</h2>
+      <a id="FAQButtonDashboard" href="./faqs.html"><i class="fas fa-question"></i></a>
+    </section>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

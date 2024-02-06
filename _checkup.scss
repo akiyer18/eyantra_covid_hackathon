@@ -1,0 +1,108 @@
+#backgroundCheckup {
+  position:fixed;
+  z-index:-2;
+  width:100%;
+  height:10000px;
+  background:$black;
+  top:0;
+  left:0;
+}
+#checkupPageMain{
+  width:100%;
+  height:100vh;
+  background: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  top:0px;
+  z-index:-1;
+}
+#checkupContainer{
+  display: flex;
+  flex-direction: column;
+  min-width:25vw;
+  height: auto;
+  justify-self: center;
+  background: $white;
+  color:$black;
+  overflow: auto;
+  margin-top:80px;
+  #leftRightCheckup {
+    display: flex;
+  }
+  #leftCheckup{
+    margin-right: 30px;
+  }
+  h1{
+    padding:15px;
+    z-index:2;
+    color:$black;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-align:center;
+    margin-top:10%;
+  }
+  form {
+    margin:10px 45px;
+    padding:0 20px;
+    font-size: 0.925rem;
+    label {
+      margin-bottom: 5px;
+    }
+    input, select{
+      border-bottom:1px solid $black;
+      width:25%;
+      margin-bottom:12.5px;
+      font-size: 1.05rem;
+      color:$black;
+      &:focus {
+        outline: none;
+      }
+      #submitCheckup {
+        display: block;
+        width:50%;
+        height:40px;
+        background: $black;
+        color:$white;
+        margin-top:15px;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        border-radius:100px;
+        border:none;
+      }      
+    }
+    .rightAlignItem {
+      width:10%;
+    }
+    #noComo {
+      margin-bottom: 0;
+    }
+    #symptom1, #yesComo {
+      margin-top:15px;
+    }
+    #submitCheckup {
+      display: block;
+      width:60%;
+      height:40px;
+      background: $black;
+      color:$white;
+      margin-left:20%;
+      margin-top:30px;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      border-radius:100px;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media all and (max-width: 750px) 
+{
+  #leftRightCheckup{
+    flex-direction: column;
+  }
+  #checkupPageMain {
+    position:absolute;
+    top:200px;
+  }
+}

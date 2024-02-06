@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CovidIkshana | Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/final_icon.png" type="image/gif" sizes="60x60">
+</head>
+
+<body>
+  <div id="loginSignupContainer">
+    <div id="signup">
+      <h1>Register <i class="fas fa-user-plus"></i></h1>
+      <form action="">
+        <label for="fullName">Full Name</label><br>
+        <input type="text" name="fullName" id="fullName"><br>
+        <label for="phone">Phone Number</label><br>
+        <input type="text" name="phone" id="phone"><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="emailSignup"><br>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="Empty" selected disabled></option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select><br>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age"><br>
+        <label for="passwordSignup">Password</label><br>
+        <input type="password" name="passwordSignup" id="passwordSignup"><br>
+        <label for="confirmPassword">Confirm Password</label><br>
+        <input type="password" name="confirmPassword" id="confirmPassword"><br>
+
+        <button type="submit" id="signupButton">SIGN UP</button>
+        <p>Already have an account? <a id="loginLinkInSignUp" href="./Login.html">SIGN IN</a></p>
+      </form>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,141 @@
+
+#mainContainerDashboard {
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+  height:auto;
+  width:100vw;
+  z-index:-1;
+  margin-top:235px;
+  background:#fff;
+  section {
+    width:320px;
+    height:320px;
+    background:$black;
+    color:$white;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    flex-direction: column;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    i {
+      font-size: 1.75rem;
+      border:none;
+      position:relative;
+      top:0px;
+      right:-12.5px;
+      padding:10px 0;
+    }
+    h2 {
+      margin-top:39%;
+      margin-bottom: 5%;
+    }
+    a{
+      background:$black;
+      border:2px solid;
+      background:$black;
+      text-decoration: none;
+      color:$white;
+      height:auto;
+      width:50px;
+      border-radius: 3px;
+      cursor: pointer;
+      &:hover{
+        transition:all 1.5s ease;
+        background:$white;
+        color:$black;
+        border-color: $black;
+      }
+      &:active {
+        background:$white;
+        color:$black;
+      }
+    }
+  }
+  #checkupTabDashboard {
+    margin-left:10vw;
+    
+  }
+  #FAQTabDashboard {
+    margin-right:10vw;
+    i{
+      right:-14px;
+    }
+  }
+  #consultationTabDashboard {
+    a{
+      font-size:1.25rem;
+      width:auto;
+      padding:10px;
+      letter-spacing: 2.5px;
+      margin-top: 7.5px;
+    }
+
+  }
+  
+}
+#instructions {
+  h4 {
+    position:fixed;
+    top: 80px;
+    left:10%;
+    font-size: 1.3rem;
+  }
+  ol{
+      font-size: 1.05rem ;
+      position: fixed;
+      top:130px;
+      left:11%;
+      list-style-type: none;
+      li{
+        margin-bottom: 2px;
+        margin-right:5%;
+      }
+  }
+}
+
+@media all and (max-width:1250px)
+{
+  #mainContainerDashboard {
+    section{
+      width:260px;
+      height:260px;
+    }
+  }
+}
+@media all and (max-width:1020px)
+{
+  #mainContainerDashboard {
+    flex-direction: column;
+    position:fixed;
+    align-items: center;
+    top:20px; 
+    section{
+      h2 {
+        font-size: 1.3rem;
+      }
+      width:200px;
+      height:200px;
+    }
+
+    #checkupTabDashboard {
+      display:none;
+    }
+    #FAQTabDashboard {
+      display: none;
+    }
+    
+  }
+ 
+}
+
+@media all and (max-width:457px) 
+{
+  #instructions {
+    ol {
+      font-size: 0.97rem;
+    }
+  }
+}
